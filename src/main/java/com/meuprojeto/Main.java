@@ -1,7 +1,9 @@
 package com.meuprojeto;
 
-public class Main {
-    public static void main() {
+import com.meuprojeto.componentes.MenuGeral;
 
+public class Main {
+    public static void main(String[] args) {
+        MenuGeral.exibir();
     }
 }

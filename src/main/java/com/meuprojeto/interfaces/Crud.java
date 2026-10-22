@@ -1,14 +1,16 @@
 package com.meuprojeto.interfaces;
 
-public interface Crud {
+import java.util.List;
 
-    void salvar();
+public interface Crud<T> {
 
-    void listar();
+    void salvar(T objeto);
 
-    void buscar();
+    List<T> listar();
 
-    void atualizar();
+    T buscar(int indice);
 
-    void deletar();
+    void atualizar(int indice, T objeto);
+
+    void deletar(int indice);
 }
